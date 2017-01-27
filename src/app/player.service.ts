@@ -34,4 +34,9 @@ export class PlayerService {
     })
    }
 
+   deletePlayer(localPlayerToDelete) {
+     var playerEntryInFirebase = this.getPlayerById(localPlayerToDelete.$key);
+     playerEntryInFirebase.remove();
+   }
+
 }

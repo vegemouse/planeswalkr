@@ -28,4 +28,10 @@ export class EditPlayersComponent implements OnInit {
     this.playerService.editPlayer(playerToUpdate);
   }
 
+  beginDeletingPlayer(playerToDelete){
+    if(confirm("Are you sure you want to delete this player from the list?")){
+      this.playerService.deletePlayer(playerToDelete);
+    }
+  }
+
 }
