@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { PlayerListComponent } from './player-list/player-list.component';
+import { PlayersComponent } from './players/players.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { PlayerListComponent } from './player-list/player-list.component';
     HomeComponent,
     AboutComponent,
     HomeComponent,
-    PlayerListComponent
+    PlayerListComponent,
+    PlayersComponent
   ],
   imports: [
     BrowserModule,
