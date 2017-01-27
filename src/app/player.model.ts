@@ -7,5 +7,6 @@ export class Player {
     public skillLevel: string,
     public proxyFriendly: boolean,
     public image: string,
+    public location: string
   ) {}
 }

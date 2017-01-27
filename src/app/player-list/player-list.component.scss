@@ -13,6 +13,7 @@ $color: #abcddb;
   padding: 5px 10px;
   margin: 3px;
   font-size: 0.7em;
+  line-height: 2em;
 }
 
 .player {
@@ -20,7 +21,7 @@ $color: #abcddb;
   width: 32%;
   margin: 0.6%;
   display: flex;
-  height: 150px;
+  height: 170px;
   &-info {
     width: 70%;
     height: 100%;
@@ -29,6 +30,12 @@ $color: #abcddb;
     &-name {
       display: block;
       font-size: 1.5em;
+    }
+    &-location {
+      opacity: 0.8;
+      font-size: 0.9em;
+      display: block;
+      margin: 10px 0;
     }
     &-link {
       color: darken($color, 40%);
@@ -44,20 +51,19 @@ $color: #abcddb;
       bottom: 10px;
     }
     &-skillLevel {
-      color: darken($color, 70%);
       display: block;
       margin: 5px 0;
     }
   }
   &-image {
-    width: 30%;
+    width: 40%;
     height: 100%;
     object-fit: cover;
   }
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 1000px) {
     width: 48%;
   }
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 750px) {
     width: 100%;
   }
 }
