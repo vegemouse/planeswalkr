@@ -3,7 +3,7 @@
 ### 01/27/2017
 
 ![Screenshot](screenshot.png)
-## Desription
+## Description
 A Magic The Gathering player database. Users are able to view all added players, and add themselves as a player. Admin can also edit properties of player and delete the player. User can also filter players using skill level and formats.
 
 ## Technologies Used
