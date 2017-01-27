@@ -4,12 +4,23 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { routing } from './app.routing';
 
+import { masterFirebaseConfig } from './api-keys';
+import { AngularFireModule } from 'angularfire2';
+
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { PlayerListComponent } from './player-list/player-list.component';
 import { PlayersComponent } from './players/players.component';
+import { PlayerComponent } from './player/player.component';
+import { AddPlayerComponent } from './add-player/add-player.component';
 
+export const firebaseConfig = {
+  apiKey: masterFirebaseConfig.apiKey,
+  authDomain: masterFirebaseConfig.authDomain,
+  databaseURL: masterFirebaseConfig.databaseURL,
+  storageBucket: masterFirebaseConfig.storageBucket
+};
 
 @NgModule({
   declarations: [
@@ -18,13 +29,16 @@ import { PlayersComponent } from './players/players.component';
     AboutComponent,
     HomeComponent,
     PlayerListComponent,
-    PlayersComponent
+    PlayersComponent,
+    PlayerComponent,
+    AddPlayerComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    routing
+    routing,
+    AngularFireModule.initializeApp(firebaseConfig)
   ],
   providers: [],
   bootstrap: [AppComponent]

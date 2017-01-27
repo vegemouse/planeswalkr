@@ -1,0 +1,57 @@
+<h3>Join the list</h3>
+<div>
+  <div class="form-container">
+    <label>Name:</label>
+    <input placeholder="Jace Beleren" #newName>
+  </div>
+  <div class="form-container">
+    <label>Phone Number:</label>
+    <input placeholder="555-555-5555" #newPhoneNumber>
+  </div>
+  <div class="form-container">
+    <label>Email:</label>
+    <input placeholder="me@mail.com" #newEmail>
+  </div>
+  <div class="form-container">
+    <label>Formats (Separared by commas):</label>
+    <br>
+    <input placeholder="EDH, Standard, Vintage" #newFormats>
+  </div>
+  <div class="form-container">
+    <label>Skill Level:</label>
+    <select #newSkillLevel>
+      <option value="">Select One</option>
+      <option value="Beginner">Beginner</option>
+      <option value="Intermediate">Intermediate</option>
+      <option value="Expert">Expert</option>
+    </select>
+  </div>
+  <div class="form-container">
+    <label>Are you okay with proxies (printed cards)?:</label><br>
+    <select #newProxyFriendly>
+      <option value="">Select One</option>
+      <option value="true">Yes</option>
+      <option value="false">No</option>
+    </select>
+  </div>
+  <div class="form-container">
+    <label>Image (URL):</label>
+    <input placeholder="http://mysite.com/picture.jpg" #newImage>
+  </div>
+  <div class="form-container">
+    <label>Location (City, State):</label>
+    <input placeholder="Portland, OR" #newLocation>
+  </div>
+
+  <button (click)="submitForm(
+  newName.value,
+  newPhoneNumber.value,
+  newEmail.value,
+  newFormats.value,
+  newSkillLevel.value,
+  newProxyFriendly.value,
+  newImage.value,
+  newLocation.value
+  ); newName.value = ''; newPhoneNumber.value = ''; newEmail.value = ''; newFormats.value = ''; newSkillLevel.value = ''; newProxyFriendly.value = ''; newImage.value = ''; newLocation.value = '';
+  " routerLink="/players">Submit</button>
+</div>

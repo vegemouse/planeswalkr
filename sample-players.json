@@ -1,0 +1,20 @@
+{ "players": [{
+    "name": "Maxwell",
+    "phoneNumber": "503-753-6453",
+    "email": "maxwell.josef@gmail.com",
+    "formats": ["EDH", "Standard"],
+    "skillLevel": "Expert",
+    "proxyFriendly": true,
+    "image": "https://pbs.twimg.com/profile_images/783092427951255552/XRFynPYe_400x400.jpg",
+    "location": "Portland, OR"
+  }, {
+    "name": "Leo",
+    "phoneNumber": "916-555-5555",
+    "email": "leo@gmail.com",
+    "formats": ["EDH", "Modern"],
+    "skillLevel": "Intermediate",
+    "proxyFriendly": true,
+    "image": "http://style.anu.edu.au/_anu/4/images/placeholders/person.png",
+    "location": "Sacramento, CA"
+    }
+  ]}

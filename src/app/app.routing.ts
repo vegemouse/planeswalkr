@@ -2,6 +2,8 @@ import { ModuleWithProviders }  from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { PlayersComponent } from './players/players.component';
+import { PlayerComponent } from './player/player.component';
+import { AddPlayerComponent } from './add-player/add-player.component';
 
 const appRoutes: Routes = [
   {
@@ -11,6 +13,14 @@ const appRoutes: Routes = [
   {
     path: 'players',
     component: PlayersComponent
+  },
+  {
+    path: 'players/:id',
+    component: PlayerComponent
+  },
+  {
+    path: 'add-player',
+    component: AddPlayerComponent
   }
 ];
 
