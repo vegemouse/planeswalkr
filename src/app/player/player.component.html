@@ -1,3 +1,19 @@
 <div>
-   <h3>{{(playerToDisplay | async)?.name}}</h3>
+   <h2>{{(playerToDisplay | async)?.name}}</h2>
+   <img src="{{(playerToDisplay | async)?.image}}" alt="{{(playerToDisplay | async)?.name}}">
+   <h3>Location</h3>
+   <p>{{(playerToDisplay | async)?.location}}</p>
+   <h3>Contact</h3>
+   <p>{{(playerToDisplay | async)?.phoneNumber}}</p>
+   <p>{{(playerToDisplay | async)?.email}}</p>
+   <h3>Formats</h3>
+   <span class="format" *ngFor="let format of (playerToDisplay | async)?.formats">
+     {{format}}
+   </span>
+   <h3>Skill Level</h3>
+   <p>{{(playerToDisplay | async)?.skillLevel}}</p>
+   <h4>Proxy Friendly?</h4>
+   <div *ngIf="(playerToDisplay | async)?.proxyFriendly">Yes</div>
+   <div *ngIf="!(playerToDisplay | async)?.proxyFriendly">No</div>
+
 </div>

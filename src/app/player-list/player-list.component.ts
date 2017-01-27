@@ -25,11 +25,3 @@ export class PlayerListComponent implements OnInit {
     this.router.navigate(['players', clickedPlayer.$key]);
   };
 }
-
-
-// public name: string,
-// public phoneNumber: string,
-// public email: string,
-// public formats: string[],
-// public skillLevel: string,
-// public proxyFriendly: boolean

@@ -21,8 +21,8 @@ export class PlayerComponent implements OnInit {
     this.route.params.forEach((urlParameters) => {
       this.playerId = urlParameters['id'];
     });
+    console.log(this.playerId);
     this.playerToDisplay = this.playerService.getPlayerById(this.playerId);
-    console.log(this.playerToDisplay.name);
   }
 
 

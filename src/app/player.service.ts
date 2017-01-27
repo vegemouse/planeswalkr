@@ -4,7 +4,6 @@ import { AngularFire, FirebaseListObservable } from 'angularfire2';
 
 @Injectable()
 export class PlayerService {
-
   players: FirebaseListObservable<any[]>;
 
   constructor(private angularFire: AngularFire) {
@@ -16,7 +15,7 @@ export class PlayerService {
   }
 
   getPlayerById(playerId: string){
-    return this.angularFire.database.object('player/' + playerId);
+    return this.angularFire.database.object('players/' + playerId);
   }
 
   addPlayer(newPlayer: Player) {
