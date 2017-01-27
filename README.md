@@ -15,7 +15,7 @@ A Magic The Gathering player database. Users are able to view all added players,
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.26.
 
 ## Installation
-* `git clone <repository-url>this repository`
+* clone project using git
 * `cd planeswalkr`
 * `npm install`
 
