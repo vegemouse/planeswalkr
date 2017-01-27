@@ -1,0 +1,33 @@
+<button (click)="editClicked()">Edit</button>
+
+<div class="edit-players-form" *ngIf="editFormShow">
+  <h3>Edit {{selectedPlayer.name}}</h3>
+  <div class="form-container">
+    <label>Name:</label>
+    <input [(ngModel)]="selectedPlayer.name">
+  </div>
+  <div class="form-container">
+    <label>Phone Number:</label>
+    <input [(ngModel)]="selectedPlayer.phoneNumber">
+  </div>
+  <div class="form-container">
+    <label>Email:</label>
+    <input [(ngModel)]="selectedPlayer.email">
+  </div>
+  <div class="form-container">
+    <label>Skill Level:</label>
+    <input [(ngModel)]="selectedPlayer.skillLevel">
+  </div>
+  <div class="form-container">
+    <label>Image (URL):</label>
+    <input [(ngModel)]="selectedPlayer.image">
+  </div>
+  <div class="form-container">
+    <label>Location (City, State):</label>
+    <input [(ngModel)]="selectedPlayer.location">
+  </div>
+
+  <button (click)="beginUpdatingPlayer(selectedPlayer)">Update</button>
+  <button (click)="editCancel()">Cancel</button>
+
+</div>

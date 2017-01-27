@@ -8,6 +8,9 @@
 <div class="players">
   <div class="player" *ngFor="let player of players | async | skillLevel:filterBySkillLevel">
     <div class="player-info">
+      <div *ngIf="currentRoute === '/admin'">
+      <app-edit-players [selectedPlayer]="player"></app-edit-players>
+    </div>
       <span class="player-info-name">{{player.name}}</span>
       <span class="player-info-skillLevel">{{player.skillLevel}} level player</span>
       <span class="player-info-location">{{player.location}}</span>

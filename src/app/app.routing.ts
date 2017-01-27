@@ -5,6 +5,7 @@ import { PlayersComponent } from './players/players.component';
 import { PlayerComponent } from './player/player.component';
 import { AddPlayerComponent } from './add-player/add-player.component';
 import { AboutComponent } from './about/about.component';
+import { AdminComponent } from './admin/admin.component';
 
 const appRoutes: Routes = [
   {
@@ -26,6 +27,10 @@ const appRoutes: Routes = [
   {
     path: 'add-player',
     component: AddPlayerComponent
+  },
+  {
+    path: 'admin',
+    component: AdminComponent
   }
 ];
 
