@@ -4,6 +4,7 @@ import { HomeComponent } from './home/home.component';
 import { PlayersComponent } from './players/players.component';
 import { PlayerComponent } from './player/player.component';
 import { AddPlayerComponent } from './add-player/add-player.component';
+import { AboutComponent } from './about/about.component';
 
 const appRoutes: Routes = [
   {
@@ -13,6 +14,10 @@ const appRoutes: Routes = [
   {
     path: 'players',
     component: PlayersComponent
+  },
+  {
+    path: 'about',
+    component: AboutComponent
   },
   {
     path: 'players/:id',

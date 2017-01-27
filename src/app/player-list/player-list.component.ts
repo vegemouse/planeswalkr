@@ -21,6 +21,12 @@ export class PlayerListComponent implements OnInit {
 
   constructor(private router: Router, private playerService: PlayerService) {}
 
+  filterBySkillLevel: string = "All Levels";
+
+  onChange(optionFromMenu) {
+    this.filterBySkillLevel = optionFromMenu;
+  }
+
   goToPlayerPage(clickedPlayer) {
     this.router.navigate(['players', clickedPlayer.$key]);
   };

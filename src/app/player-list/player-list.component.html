@@ -1,5 +1,12 @@
+<select (change)="onChange($event.target.value)">
+  <option value="All Levels">Filter by skill level</option>
+  <option value="Beginner">Beginner</option>
+  <option value="Intermediate">Intermediate</option>
+  <option value="Expert">Expert</option>
+</select>
+
 <div class="players">
-  <div class="player" *ngFor="let player of players | async">
+  <div class="player" *ngFor="let player of players | async | skillLevel:filterBySkillLevel">
     <div class="player-info">
       <span class="player-info-name">{{player.name}}</span>
       <span class="player-info-skillLevel">{{player.skillLevel}} level player</span>

@@ -14,6 +14,7 @@ import { PlayerListComponent } from './player-list/player-list.component';
 import { PlayersComponent } from './players/players.component';
 import { PlayerComponent } from './player/player.component';
 import { AddPlayerComponent } from './add-player/add-player.component';
+import { SkillLevelPipe } from './skill-level.pipe';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -31,7 +32,8 @@ export const firebaseConfig = {
     PlayerListComponent,
     PlayersComponent,
     PlayerComponent,
-    AddPlayerComponent
+    AddPlayerComponent,
+    SkillLevelPipe
   ],
   imports: [
     BrowserModule,
