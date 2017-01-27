@@ -17,6 +17,7 @@ import { AddPlayerComponent } from './add-player/add-player.component';
 import { SkillLevelPipe } from './skill-level.pipe';
 import { AdminComponent } from './admin/admin.component';
 import { EditPlayersComponent } from './edit-players/edit-players.component';
+import { FormatPipe } from './format.pipe';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -37,7 +38,8 @@ export const firebaseConfig = {
     AddPlayerComponent,
     SkillLevelPipe,
     AdminComponent,
-    EditPlayersComponent
+    EditPlayersComponent,
+    FormatPipe
   ],
   imports: [
     BrowserModule,

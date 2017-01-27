@@ -24,8 +24,14 @@ export class PlayerListComponent implements OnInit {
 
   filterBySkillLevel: string = "All Levels";
 
+  filterByFormats: string = "All Formats";
+
   onChange(optionFromMenu) {
     this.filterBySkillLevel = optionFromMenu;
+  }
+
+  onFormatChange(optionFromMenu) {
+    this.filterByFormats = optionFromMenu;
   }
 
   goToPlayerPage(clickedPlayer) {

@@ -5,8 +5,18 @@
   <option value="Expert">Expert</option>
 </select>
 
+<select (change)="onFormatChange($event.target.value)">
+  <option value="All Formats">Filter by format</option>
+  <option value="EDH">EDH/Commander</option>
+  <option value="Standard">Standard</option>
+  <option value="Legacy">Legacy</option>
+  <option value="Vintage">Vintage</option>
+  <option value="Modern">Modern</option>
+  <option value="Pauper">Pauper</option>
+</select>
+
 <div class="players">
-  <div class="player" *ngFor="let player of players | async | skillLevel:filterBySkillLevel">
+  <div class="player" *ngFor="let player of players | async | skillLevel:filterBySkillLevel | format:filterByFormats">
     <div class="player-info">
       <div *ngIf="currentRoute === '/admin'">
       <app-edit-players [selectedPlayer]="player"></app-edit-players>
