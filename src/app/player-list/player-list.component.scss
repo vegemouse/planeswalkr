@@ -17,7 +17,8 @@ $color: #abcddb;
 }
 
 .player {
-  background: $color;
+  background: lighten($color, 20%);
+  border: 1px solid $color;
   width: 32%;
   margin: 0.6%;
   display: flex;
@@ -43,6 +44,7 @@ $color: #abcddb;
       font-size: 0.9em;
       &:hover {
         text-decoration: underline;
+        cursor: pointer;
       }
     }
     &-formats {
@@ -59,11 +61,25 @@ $color: #abcddb;
     width: 40%;
     height: 100%;
     object-fit: cover;
+    &:hover {
+      cursor: pointer;
+    }
   }
   @media screen and (max-width: 1000px) {
     width: 48%;
   }
   @media screen and (max-width: 750px) {
     width: 100%;
+  }
+}
+
+.list-header {
+  select {
+    width: 200px;
+    height: 30px;
+    border: 1px solid $color;
+    background-color: lighten($color, 20%);
+    border-radius: 0;
+
   }
 }

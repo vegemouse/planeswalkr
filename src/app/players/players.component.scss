@@ -1,16 +1,19 @@
+$color: #abcddb;
+
 .player-list {
   width: 80%;
   max-width: 1200px;
   margin: 0 auto;
+  margin-bottom: 150px;
 }
 
 .add-button {
   position: fixed;
   bottom: 30px;
-  right: 30px;
+  right: 80px;
   font-size: 2em;
   color: white;
-  background: black;
+  background: darken($color, 40%);
   border: 1px solid transparent;
   padding: 5px 10px;
   text-decoration: none;
@@ -18,7 +21,7 @@
   z-index: 10;
   &:hover {
     border: 1px solid black;
-    color: black;
-    background: white;
+    color: white;
+    background: darken($color, 70%);
   }
 }
