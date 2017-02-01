@@ -18,6 +18,17 @@ This project was generated with [angular-cli](https://github.com/angular/angular
 * clone project using git
 * `cd planeswalkr`
 * `npm install`
+* create 'api-keys.ts' file in src/app
+* include following code in 'api-keys.ts
+`export var masterFirebaseConfig = {
+  apiKey: API-KEY-FROM-FIREBASE,
+  authDomain: AUTH-DOMAIN-FROM-FIREBASE,
+  databaseURL: URL-FROM-FIREBASE,
+  storageBucket: STORAGE-BUCKET-FROM-FIREBASE,
+  messagingSenderId: "MESSAGE-SENDER-ID-FROM-FIREBASE"
+  };
+ `
+
 
 ## Development server
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
